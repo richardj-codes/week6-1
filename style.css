@@ -1,0 +1,231 @@
+/* Box sizing rules and reset*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  /* resetting font size to 10px makes rem math much easier*/
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set section heading font*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+P,
+li {
+  font-size: 1.6rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ########## END GLOBAL ########## */
+.container {
+  width: 90vw;
+  height: 90vh;
+  margin: 10vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.card1 {
+  background: #e38826;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card2 {
+  background: #006970;
+}
+
+.card3 {
+  background: #004241;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem;
+  height: 400px;
+  color: rgba(255, 255, 255, 0.747);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+img {
+  width: 55px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+button {
+  width: 130px;
+  height: 42px;
+  background: white;
+  outline: none;
+  border-radius: 35px;
+  font-size: 1.3rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card1 button {
+  color: #e38826;
+}
+
+.card2 button {
+  color: #006970;
+}
+
+.card3 button {
+  color: #004241;
+}
+
+/* ########## MEDIA QUERIES ########## */
+@media screen and (min-width: 1400px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1200px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    height: 450px;
+    width: 300px;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+  .card1 {
+    background: #e38826;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 8px;
+  }
+  .card2 {
+    background: #006970;
+  }
+  .card3 {
+    background: #004241;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
