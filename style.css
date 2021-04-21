@@ -94,6 +94,12 @@ select {
 }
 
 /* ########## END GLOBAL ########## */
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --green: hsl(184, 100%, 22%);
+  --drk-green: hsl(179, 100%, 13%);
+}
+
 .container {
   width: 90vw;
   height: 90vh;
@@ -121,17 +127,17 @@ select {
 }
 
 .card1 {
-  background: #e38826;
+  background: var(--orange);
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
 
 .card2 {
-  background: #006970;
+  background: var(--green);
 }
 
 .card3 {
-  background: #004241;
+  background: var(--drk-green);
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -179,15 +185,15 @@ button {
 }
 
 .card1 button {
-  color: #e38826;
+  color: var(--orange);
 }
 
 .card2 button {
-  color: #006970;
+  color: var(--green);
 }
 
 .card3 button {
-  color: #004241;
+  color: var(--drk-green);
 }
 
 /* ########## MEDIA QUERIES ########## */
@@ -213,16 +219,11 @@ button {
     line-height: 1.8;
   }
   .card1 {
-    background: #e38826;
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
     border-top-left-radius: 8px;
   }
-  .card2 {
-    background: #006970;
-  }
   .card3 {
-    background: #004241;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 8px;

@@ -84,7 +84,11 @@ select {
 	}
 }
 /* ########## END GLOBAL ########## */
-
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--green: hsl(184, 100%, 22%);
+	--drk-green: hsl(179, 100%, 13%);
+}
 .container {
 	width: 90vw;
 	height: 90vh;
@@ -99,15 +103,15 @@ select {
 	width: 300px;
 }
 .card1 {
-	background: hsl(31, 77%, 52%);
+	background: var(--orange);
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
 }
 .card2 {
-	background: hsl(184, 100%, 22%);
+	background: var(--green);
 }
 .card3 {
-	background: hsl(179, 100%, 13%);
+	background: var(--drk-green);
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
@@ -144,13 +148,13 @@ button {
 }
 
 .card1 button {
-	color: hsl(31, 77%, 52%);
+	color: var(--orange);
 }
 .card2 button {
-	color: hsl(184, 100%, 22%);
+	color: var(--green);
 }
 .card3 button {
-	color: hsl(179, 100%, 13%);
+	color: var(--drk-green);
 }
 
 /* ########## MEDIA QUERIES ########## */
@@ -173,16 +177,12 @@ button {
 		line-height: 1.8;
 	}
 	.card1 {
-		background: hsl(31, 77%, 52%);
 		border-bottom-left-radius: 8px;
 		border-top-right-radius: 0px;
 		border-top-left-radius: 8px;
 	}
-	.card2 {
-		background: hsl(184, 100%, 22%);
-	}
+
 	.card3 {
-		background: hsl(179, 100%, 13%);
 		border-bottom-right-radius: 8px;
 		border-bottom-left-radius: 0px;
 		border-top-right-radius: 8px;
