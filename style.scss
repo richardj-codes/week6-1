@@ -39,6 +39,7 @@ body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	background: hsl(0, 0%, 95%);
 }
 P,
 li {
@@ -90,9 +91,9 @@ select {
 	--drk-green: hsl(179, 100%, 13%);
 }
 .container {
-	width: 90vw;
-	height: 90vh;
-	margin: 10vh auto;
+	width: 100vw;
+	// height: 100vh;
+	margin: 20px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -130,16 +131,17 @@ img {
 }
 h1 {
 	font-size: 4rem;
-	color: white;
+	color: hsl(0, 0%, 95%);
 }
 p {
 	font-size: 1.5rem;
 	line-height: 1.8;
+	color: hsla(0, 0%, 100%, 0.75);
 }
 button {
 	width: 130px;
 	height: 42px;
-	background: white;
+	background: hsl(0, 0%, 95%);
 	outline: none;
 	border-radius: 35px;
 	font-size: 1.3rem;
@@ -160,6 +162,14 @@ button {
 /* ########## MEDIA QUERIES ########## */
 
 @media screen and (min-width: 1400px) {
+	.container {
+		width: 100vw;
+		height: 100vh;
+		// margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.cards {
 		display: flex;
 
